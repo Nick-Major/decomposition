@@ -3,6 +3,8 @@ import NewsFeed from './components/NewsFeed';
 import DateTime from './components/DateTime';
 import MainNews from './components/MainNews';
 import FinancialIndicators from './components/FinancialIndicators';
+import InfoBanner from './components/InfoBanner';
+import SearchBar from './components/SearchBar';
 import './App.css';
 
 const quotes = [
@@ -23,7 +25,7 @@ const quotes = [
     value: '64.90',
     trend: '+1.63%'
   }
-]
+];
 
 const newsdata = [
   {
@@ -56,7 +58,42 @@ const newsdata = [
     articleLink: '#',
     title: 'С птиц будут собирать налог на перья'
   }
-]
+];
+
+const menuItems = [
+  {
+    title: "Видео",
+    link: "#"
+  },
+  {
+    title: "Картинки",
+    link: "#"
+  },
+  {
+    title: "Новости",
+    link: "#"
+  },
+  {
+    title: "Карты",
+    link: "#"
+  },
+  {
+    title: "Маркет",
+    link: "#"
+  },
+  {
+    title: "Переводчик",
+    link: "#"
+  },
+  {
+    title: "Эфир",
+    link: "#"
+  },
+  {
+    title: "ещё",
+    link: "#"
+  }
+];
 
 function App() {
   return (
@@ -72,7 +109,9 @@ function App() {
         <DateTime isoDate="2023-07-31T02:32:00" />
       </NewsFeed>
       <MainNews news={newsdata} />
+      <InfoBanner title="Работа над ошибками" description="Смотрите на Яндексе и запоминайте" imageUrl="#" />
       <FinancialIndicators stockQuotes={quotes} />
+      <SearchBar categories={menuItems} logoLink="#" logoUrl="#" exampleLink="#" exampleTitle="фаза луны сегодня" />
     </MainWindow>
   );
 }
