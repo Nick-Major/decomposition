@@ -12,8 +12,13 @@ import MoviePoster from './components/MoviePoster';
 import BottomWidgets from './components/BottomWidgets';
 import WeatherWidget from './components/WeatherWidget';
 import BroadcastWidget from './components/BroadcastWidget';
+import broadcastData from './config/broadcastData';
 import HotLinks from './components/HotLinks';
+import linksData from './config/linksData';
+import TelevisionProgram from './components/TelevisionProgram';
+import programsData from './config/programsData';
 import './App.css';
+import TravelWidget from './components/TravelWidget';
 
 function App() {
   return (
@@ -26,7 +31,7 @@ function App() {
         recommendSrc="#"
         recommendText="Рекомендуем"
       >
-        <DateTime isoDate="2023-07-31T02:32:00" />
+        <DateTime isoDate="2023-07-31T02:32:00" dateFormat={"d MMMM, EEEE HH:mm"} />
       </NewsFeed>
       <MainNews news={newsData} />
       <InfoBanner title="Работа над ошибками" description="Смотрите на Яндексе и запоминайте" imageUrl="#" />
@@ -38,6 +43,20 @@ function App() {
         releaseDate="В кино с 1 августа"
         trailerUrl="#"
       />
+      <BottomWidgets columns={3}>
+        <WeatherWidget
+          weatherImg={"#"}
+          currentWeather={"+17"}
+          morningWeather={"+17"}
+          afternoonWeather={"+20"}
+        />
+        <TravelWidget title={"Карта Германии"} linkName={"Расписания"} link={"#"} />
+        <BroadcastWidget data={broadcastData} />
+        <HotLinks links={linksData} />
+        <TelevisionProgram programs={programsData}>
+          <DateTime />
+        </TelevisionProgram>
+      </BottomWidgets>
     </MainWindow>
   );
 }

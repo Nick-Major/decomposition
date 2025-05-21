@@ -1,3 +1,5 @@
+import React from 'react';
+
 const BottomWidgets = ({ children, columns }) => {
   return (
     <div className="bottom-widgets">

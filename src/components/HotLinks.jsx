@@ -5,7 +5,7 @@ const HotLinks = ({ links }) => {
             <div className="links-list">
                 {links.map((link, index) => (
                     <div key={index} className="link-item">
-                        <a href={link.url}></a>
+                        <a href={link.url}>{link.category}</a>
                         <span>{`— ${link.description}`}</span>
                     </div>
                 ))}
