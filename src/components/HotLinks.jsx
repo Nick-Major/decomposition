@@ -1,3 +1,5 @@
+// Виджет с группировкой часто посещаемых ресурсов
+
 const HotLinks = ({ links }) => {
     return (
         <div className="hot-links">

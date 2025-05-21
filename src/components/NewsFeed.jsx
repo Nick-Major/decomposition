@@ -1,3 +1,5 @@
+// Новостной блок со ссылками на СМИ и рекомендации
+
 const NewsFeed = ({nowMediaSrc, nowMediaText, foreignMediaSrc, foreignMediaText, recommendSrc, recommendText, children}) => {
     return (
         <div className="news-feed">

@@ -1,3 +1,5 @@
+// Блок с курсом валют и биржевыми котировками
+
 const FinancialIndicators = ({ stockQuotes }) => {
   return (
     <div className="financial-indicators">

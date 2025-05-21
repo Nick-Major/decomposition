@@ -1,3 +1,5 @@
+// Новостной блок с топ 5 актуальных новостей
+
 import assignAlt from "../utils/assignAlt";
 
 const MainNews = ({ news }) => {

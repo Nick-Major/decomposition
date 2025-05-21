@@ -1,3 +1,5 @@
+// Поисковая строка с категориями и лого
+
 const SearchBar = ({categories, logoLink, logoUrl, exampleLink, exampleTitle}) => {
     return (
         <div className="search-bar">

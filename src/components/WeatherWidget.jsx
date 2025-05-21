@@ -1,3 +1,5 @@
+// Виджет погоды
+
 const WeatherWidget = ({ weatherImg, currentWeather, morningWeather, afternoonWeather }) => {
     return (
         <div className="weather-widget">

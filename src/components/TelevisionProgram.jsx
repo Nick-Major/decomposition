@@ -1,3 +1,5 @@
+// Виджет телевизионного вещания
+
 import React from 'react';
 
 const TelevisionProgram = ({ programs, children }) => {

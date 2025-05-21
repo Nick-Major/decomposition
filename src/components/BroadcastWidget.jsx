@@ -1,3 +1,5 @@
+// Виджет с передачми в эфире
+
 const BroadcastWidget = ({ data }) => {
     return (
         <div className="broadcast-widget">

@@ -1,3 +1,5 @@
+// Киноафиша с возможностью просмотра трейлера
+
 import { useState } from 'react';
 
 const MoviePoster = ({ 

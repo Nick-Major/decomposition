@@ -1,3 +1,5 @@
+// Транспортно-навигационные сервисы
+
 const TravelWidget = ({ title, linkName, link}) => {
     return (
         <div className="travel-widget">

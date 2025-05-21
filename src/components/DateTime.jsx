@@ -1,3 +1,5 @@
+// Компонент для отображения времени в нужном формате
+
 import { format, parse } from 'date-fns';
 import { ru } from 'date-fns/locale';
 

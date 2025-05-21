@@ -1,3 +1,5 @@
+// Информационный баннер со ссылками на обучающие ресурсы
+
 const InfoBanner = ({ 
   title, 
   description, 

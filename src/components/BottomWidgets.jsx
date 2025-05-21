@@ -1,3 +1,5 @@
+// Подвал - контейнер для виджетов
+
 import React from 'react';
 
 const BottomWidgets = ({ children, columns }) => {
