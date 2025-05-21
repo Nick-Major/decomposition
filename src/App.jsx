@@ -5,6 +5,10 @@ import MainNews from './components/MainNews';
 import FinancialIndicators from './components/FinancialIndicators';
 import InfoBanner from './components/InfoBanner';
 import SearchBar from './components/SearchBar';
+import MoviePoster from './components/MoviePoster';
+import BottomWidgets from './components/BottomWidgets';
+import WeatherWidget from './components/WeatherWidget';
+import BroadcastWidget from './components/BroadcastWidget';
 import './App.css';
 
 const quotes = [
@@ -112,6 +116,12 @@ function App() {
       <InfoBanner title="Работа над ошибками" description="Смотрите на Яндексе и запоминайте" imageUrl="#" />
       <FinancialIndicators stockQuotes={quotes} />
       <SearchBar categories={menuItems} logoLink="#" logoUrl="#" exampleLink="#" exampleTitle="фаза луны сегодня" />
+      <MoviePoster
+        imageUrl="#"
+        title="Форсаж Хоббс и Шоу" 
+        releaseDate="В кино с 1 августа"
+        trailerUrl="#"
+      />
     </MainWindow>
   );
 }
